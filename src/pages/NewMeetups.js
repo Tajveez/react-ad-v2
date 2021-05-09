@@ -1,7 +1,7 @@
 const NewMeetupsPage = () => {
     return (
         <div>
-            
+            New Meetups
         </div>
     )
 }
