@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <AllMeetupsPage />
         </Route>
         <Route path="/new-meetups">
