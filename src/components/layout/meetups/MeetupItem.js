@@ -1,3 +1,4 @@
+import itemCss from "./MeetupItem.module.css";
 const MeetupItem = ({ title, image, address, description }) => {
   return (
     <li>
