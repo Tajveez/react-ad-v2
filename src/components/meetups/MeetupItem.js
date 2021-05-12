@@ -1,7 +1,9 @@
+import Card from "../ui/Card/Card";
 import itemCss from "./MeetupItem.module.css";
 const MeetupItem = ({ meetup }) => {
   const { title, image, address, description } = meetup;
   return (
+    <Card>
     <li className={itemCss.list}>
       <div className={itemCss.image}>
         <img src={image} alt={title} />
@@ -15,6 +17,7 @@ const MeetupItem = ({ meetup }) => {
         <button>To Favorites</button>
       </div>
     </li>
+    </Card>
   );
 };
 
