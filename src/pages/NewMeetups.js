@@ -1,9 +1,9 @@
 const NewMeetupsPage = () => {
-    return (
-        <div>
-            New Meetups
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>New Meetups</h1>
+    </div>
+  );
+};
 
-export default NewMeetupsPage
+export default NewMeetupsPage;
