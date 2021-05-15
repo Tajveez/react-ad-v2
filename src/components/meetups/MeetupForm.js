@@ -1,10 +1,15 @@
 import Card from '../ui/Card/Card'
 import FormCss from './MeetupForm.module.css'
+import {useRef} from 'react'
 
 const MeetupForm = () => {
+    function submitHandler(e) {
+        e.preventDefault();
+    }
+
     return (
         <Card>
-            <form className={FormCss.form}>
+            <form className={FormCss.form} onSubmit={submitHandler}>
                 <div className={FormCss.control}>
                     <label htmlFor="title">Meetup Title</label>
                     <input type="text" required id="title" />
