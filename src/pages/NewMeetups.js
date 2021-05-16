@@ -2,6 +2,7 @@ import MeetupForm from "../components/meetups/MeetupForm"
 
 const NewMeetupsPage = () => {
   function addNewMeetupHandler(meetupData) {
+    // Making API call to forward the form data
   }
 
   return (
