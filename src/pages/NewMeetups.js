@@ -1,10 +1,13 @@
 import MeetupForm from "../components/meetups/MeetupForm"
 
 const NewMeetupsPage = () => {
+  function addNewMeetupHandler(meetupData) {
+  }
+
   return (
     <div>
       <h1>New Meetups</h1>
-      <MeetupForm/>
+      <MeetupForm onAddMeetup={addNewMeetupHandler} />
     </div>
   );
 };
