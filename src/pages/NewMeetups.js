@@ -1,6 +1,8 @@
+import { useHistory } from "react-router-dom";
 import MeetupForm from "../components/meetups/MeetupForm";
 
 const NewMeetupsPage = () => {
+  const history = useHistory();
   function addNewMeetupHandler(meetupData) {
     // Making API call to forward the form data
     fetch("https://react-demo-ebfd9-default-rtdb.firebaseio.com/meetups.json", {
@@ -9,6 +11,8 @@ const NewMeetupsPage = () => {
       headers: {
         "Content-Type": "application/json",
       },
+    }).then(() => {
+      history.replace("/");
     });
   }
 
