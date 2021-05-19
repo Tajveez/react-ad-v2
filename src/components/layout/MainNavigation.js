@@ -16,7 +16,7 @@ const MainNavigation = () => {
                         <Link to="/new-meetup">Add New Meetup</Link>
                     </li>
                     <li>
-                        <Link to="/favorites">Favorites ({favoritesCtx.totalFavorites})</Link>
+                        <Link to="/favorites">Favorites <span className={navCss.badge}>{favoritesCtx.totalFavorites}</span></Link>
                     </li>
                 </ul>
             </nav>
